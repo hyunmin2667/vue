@@ -28,9 +28,9 @@
   </header>
 
     <main>
-      <BusInfoView1 v-show="picked==='0'"/>
-      <BusInfoView2 v-show="picked==='1'"/>
-      <BusInfoView3 v-show="picked==='2'"/>
+      <BusInfoView1 v-if="picked==='0'"/>
+      <BusInfoView2 v-if="picked==='1'"/>
+      <BusInfoView3 v-if="picked==='2'"/>
 
     </main>
 
