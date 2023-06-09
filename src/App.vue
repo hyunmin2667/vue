@@ -1,8 +1,25 @@
-<script setup>
+<script>
   import BusInfoView1 from './components/BusInfo1.vue'
   import BusInfoView2 from './components/BusInfo2.vue'
   import BusInfoView3 from './components/BusInfo3.vue'
+  export default {
+    name: 'App',
+    data() {
+      return {
+        picked: '0',
+      }
+    },
 
+    method: {
+    },
+
+    components: {
+      BusInfoView1,
+      BusInfoView2,
+      BusInfoView3
+    }
+    
+  }
 </script>
 
 <template>
@@ -28,35 +45,21 @@
   </header>
 
     <main>
-      <BusInfoView1 v-if="picked==='0'"/>
-      <BusInfoView2 v-if="picked==='1'"/>
-      <BusInfoView3 v-if="picked==='2'"/>
+      <BusInfoView1 v-if="picked=='0'"/>
+      <BusInfoView2 v-if="picked=='1'"/>
+      <BusInfoView3 v-if="picked=='2'"/>
 
     </main>
+    <footer>
+      v0.1
+    </footer>
 
 
 </template>
 
 
 <script>
-  export default {
-    name: 'App',
-    data() {
-      return {
-        picked: '0'
-      }
-    },
-
-    method: {
-    },
-
-    components: {
-      BusInfoView1,
-      BusInfoView2,
-      BusInfoView3
-    }
-    
-  }
+  
 </script>
 
 
