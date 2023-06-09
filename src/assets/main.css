@@ -265,26 +265,34 @@ h2 {
 
 
 
-.post-list {
+.busInfo-list {
   list-style: none;
   padding: 0;
 }
 
-.post-list li {
+.busInfo-list li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  border-bottom: 1px solid #494949;
 }
 
-.post-title {
+.busInfo-title {
+  flex-grow: 1;
+  text-align: left;
+  padding-right: 10px;
+  color: #888888;
+}
+
+.busInfo-bus {
   flex-grow: 1;
   text-align: left;
 }
 
-.post-view {
+.busInfo-view {
   margin-left: 10px;
+  color: #ccc;
 }
 
 

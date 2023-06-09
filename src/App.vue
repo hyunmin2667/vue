@@ -1,4 +1,7 @@
 <script setup>
+  import BusInfoView1 from './components/BusInfo1.vue'
+  import BusInfoView2 from './components/BusInfo2.vue'
+  import BusInfoView3 from './components/BusInfo3.vue'
 
 </script>
 
@@ -9,13 +12,12 @@
 
     <section>
       <h1>목적지를 선택하세요</h1>
-
       <div class="segmented-controls">
-        <input id="three-1" name="three" type="radio" checked>
+        <input id="three-1" name="three" type="radio" v-model="picked" value="0" checked>
         <label for="three-1">민석도서관</label>
-        <input id="three-2" name="three" type="radio">
+        <input id="three-2" name="three" type="radio" v-model="picked" value="1">
         <label for="three-2">스튜던트플라자</label>
-        <input id="three-3" name="three" type="radio">
+        <input id="three-3" name="three" type="radio" v-model="picked" value="2">
         <label for="three-3">글로벌빌리지</label>
       </div>
     </section>
@@ -25,43 +27,38 @@
 
   </header>
 
-  <main>
+    <main>
+      <BusInfoView1 v-show="picked==='0'"/>
+      <BusInfoView2 v-show="picked==='1'"/>
+      <BusInfoView3 v-show="picked==='2'"/>
 
-    <ul class="post-list">
-      <li>
-        <span class="post-title">버스 1</span>
-        <span class="post-view">1분</span>
-      </li>
-      <li>
-        <span class="post-title">버스 2</span>
-        <span class="post-view">5분</span>
-      </li>
-      <li>
-        <span class="post-title">버스 3</span>
-        <span class="post-view">10분</span>
-      </li>
-      <!-- 추가적인 리스트 아이템을 여기에 추가할 수 있습니다 -->
-    </ul>
+    </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  </main>
 </template>
+
+
+<script>
+  export default {
+    name: 'App',
+    data() {
+      return {
+        picked: '0'
+      }
+    },
+
+    method: {
+    },
+
+    components: {
+      BusInfoView1,
+      BusInfoView2,
+      BusInfoView3
+    }
+    
+  }
+</script>
+
 
 <style scoped>
   header {
