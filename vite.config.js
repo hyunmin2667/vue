@@ -13,7 +13,7 @@ export default defineConfig({
         enabled: true
       },
       injectRegister: 'auto',
-      includeAssets: ['./favicon.ico', './public/img/192png.png', './src/assets/logo.svg'],
+      includeAssets: ['favicon.ico', '192png.png', 'logo.svg'],
       manifest: {
         name: '디비(DBI)',
         short_name: '디비',
@@ -21,12 +21,12 @@ export default defineConfig({
         theme_color: '#ffffff',
         icons: [
           {
-            src: './public/img/192png.png',
+            src: '192png.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: './public/img/512png.png',
+            src: '512png.png',
             sizes: '512x512',
             type: 'image/png'
           }
