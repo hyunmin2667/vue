@@ -16,7 +16,7 @@ export default {
     return {
       serviceKey: import.meta.env.VITE_API_KEY,
       objBus : [
-        { location: "배라앞", bus: "사상구5", time: "도착정보없음" },
+        { location: "냉정역3번", bus: "사상구5", time: "도착정보없음" },
         { location: "배라앞", bus: "사상구5-1", time: "도착정보없음" },
         { location: "배라앞", bus: "사상구5-2", time: "도착정보없음" }
       ],

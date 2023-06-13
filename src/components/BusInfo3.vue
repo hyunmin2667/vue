@@ -19,9 +19,9 @@
       return {
         serviceKey: import.meta.env.VITE_API_KEY,
         objBus: [
-          { location: "배라앞", bus: "사상구2", time: "도착정보없음" },
-          { location: "배라앞", bus: "사상구3", time: "도착정보없음" },
-          { location: "배라앞", bus: "사상구3-1", time: "도착정보없음" }
+          { location: "주례역1번", bus: "사상구2", time: "도착정보없음" },
+          { location: "주례역1번", bus: "사상구3", time: "도착정보없음" },
+          { location: "주례역1번", bus: "사상구3-1", time: "도착정보없음" }
         ],
       };
     },
@@ -66,11 +66,11 @@
       //0번째, 사상구2, 주례럭키아파트.주례역(주례역1번출구)
       this.stopArrByBstopid(0,5291502000,201550102);
 
-      //1번째, 사상구3, 럭키아파트.주례역(주례역5번출구)
-      this.stopArrByBstopid(1,5291503000,201530103);
+      //1번째, 사상구3, 주례역
+      this.stopArrByBstopid(1,5291503000,201550103);
 
-      //2번째, 사상구3-1, 럭키아파트.주례역(주례역5번출구)
-      this.stopArrByBstopid(2,5291503100,201530103);
+      //2번째, 사상구3-1, 주례역
+      this.stopArrByBstopid(2,5291503100,201550103);
 
     },
   };
