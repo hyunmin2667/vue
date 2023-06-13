@@ -34,7 +34,7 @@ export default {
         const self = this;
         const SERVICE_KEY = this.serviceKey;
         var xhr = new XMLHttpRequest();
-        var url = 'http://apis.data.go.kr/6260000/BusanBIMS/stopArrByBstopid'; /*URL*/
+        var url = 'https://apis.data.go.kr/6260000/BusanBIMS/stopArrByBstopid'; /*URL*/
         var queryParams = '?' + encodeURIComponent('serviceKey') + '='+encodeURIComponent(SERVICE_KEY); /*Service Key*/
         queryParams += '&' + encodeURIComponent('lineid') + '=' + encodeURIComponent(lineid); /**/
         queryParams += '&' + encodeURIComponent('bstopid') + '=' + encodeURIComponent(bstopid); /**/
