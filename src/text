@@ -1,0 +1,21 @@
+/* Javascript 샘플 코드 */
+
+const SERVICE_KEY = import.meta.env.API_KEY;
+
+var xhr = new XMLHttpRequest();
+var url = 'http://apis.data.go.kr/6260000/BusanBIMS/busStopList'; /*URL*/
+var queryParams = '?' + encodeURIComponent('serviceKey') + '='+SERVICE_KEY; /*Service Key*/
+queryParams += '&' + encodeURIComponent('pageNo') + '=' + encodeURIComponent('1'); /**/
+queryParams += '&' + encodeURIComponent('numOfRows') + '=' + encodeURIComponent('10'); /**/
+queryParams += '&' + encodeURIComponent('bstopnm') + '=' + encodeURIComponent('동서대스튜던트프라자'); /**/
+queryParams += '&' + encodeURIComponent('arsno') + '=' + encodeURIComponent(''); /**/
+
+xhr.open('GET', url + queryParams);
+xhr.send('');
+
+xhr.onreadystatechange = function () {
+    if (this.readyState == 4) {
+       let dd = ('Status: '+this.status+'\n\nHeaders: '+JSON.stringify(this.getAllResponseHeaders())+'\n\nBody: '+this.responseText);
+    }
+};
+
