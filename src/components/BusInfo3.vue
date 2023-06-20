@@ -19,7 +19,7 @@
       return {
         serviceKey: import.meta.env.VITE_API_KEY,
         objBus: [
-          { location: "주례역1번", bus: "사상구2", time: "도착정보없음" },
+          { location: "주례역1번(출발)", bus: "사상구2", time: "도착정보없음" },
           { location: "주례역1번", bus: "사상구3", time: "도착정보없음" },
           { location: "주례역1번", bus: "사상구3-1", time: "도착정보없음" }
         ],

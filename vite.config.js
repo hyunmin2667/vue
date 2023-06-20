@@ -15,9 +15,9 @@ export default defineConfig({
       injectRegister: 'auto',
       includeAssets: ['favicon.ico', '192png.png', 'logo.svg'],
       manifest: {
-        name: '디비(DBI)',
-        short_name: '디비',
-        description: '동서대학교 버스정보 앱',
+        name: '디비디비',
+        short_name: '디비디비',
+        description: '동서대학교 버스정보(DBI:DSU BUS INFO)',
         theme_color: '#ffffff',
         icons: [
           {

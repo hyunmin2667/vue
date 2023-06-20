@@ -3,6 +3,7 @@
   import BusInfoView2 from './components/BusInfo2.vue'
   import BusInfoView3 from './components/BusInfo3.vue'
   
+  
   export default {
     name: 'App',
     data() {
@@ -25,9 +26,13 @@
 
 <template>
   <header>
-    <h1>DSU BUS INFO</h1>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
+    <div class="logo">
+      <img alt="logo" class="logo-image" src="./assets/logo.svg" width="26" height="26"  />
+      <h1 class="logo-text">디비디비</h1>
+    </div>
+  </header>
+  <main>
+    
     <section>
       <h2>목적지를 선택하세요</h2>
       <div class="segmented-controls">
@@ -40,16 +45,12 @@
       </div>
     </section>
 
-
-
-
-  </header>
-  <main>
     <BusInfoView1 v-if="picked=='0'"/>
     <BusInfoView2 v-if="picked=='1'"/>
     <BusInfoView3 v-if="picked=='2'"/>
 
   </main>
+  
   <footer>
     <br><br><br>
     2023 컴퓨터공학과 캡스톤디자인1<br>
@@ -58,13 +59,8 @@
 
 </template>
 
-
-<script>
-  
-</script>
-
-
 <style scoped>
+
   header {
     line-height: 1.5;
   }
@@ -77,10 +73,10 @@
     padding:0
   }
 
-  .logo {
+  /* .logo {
     display: block;
     margin: 0 auto 2rem;
-  }
+  } */
 
   @media (min-width: 1024px) {
     header {
