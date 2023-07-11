@@ -14,7 +14,7 @@
 
     method: {
     },
-
+    
     components: {
       BusInfoView1,
       BusInfoView2,
@@ -31,8 +31,8 @@
       <h1 class="logo-text">디비디비</h1>
     </div>
   </header>
+  
   <main>
-    
     <section>
       <h2>목적지를 선택하세요</h2>
       <div class="segmented-controls">
@@ -48,8 +48,8 @@
     <BusInfoView1 v-if="picked=='0'"/>
     <BusInfoView2 v-if="picked=='1'"/>
     <BusInfoView3 v-if="picked=='2'"/>
-
   </main>
+  
   
   <footer>
     <br><br><br>
@@ -70,7 +70,12 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding:0
+    padding:0;
+  }
+
+  main {
+    justify-content: center;
+    align-items: center;
   }
 
   /* .logo {

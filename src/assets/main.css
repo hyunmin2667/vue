@@ -7,10 +7,6 @@
   font-display: swap; /*폰트 디스플레이*/
 }
 
-.banselect{
-
-}
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -27,7 +23,7 @@
 
 a {
   text-decoration: none;
-  color: var(--color-blue3-);
+  color: var(--color-blue3);
   transition: 0.4s;
 }
 
@@ -72,16 +68,15 @@ section {
 h1 {
   /* margin: 4rem 0 2rem 0; */
   font-weight: 600;
-  color: var(--color-blue1-);
+  color: #0077b6;
   
 }
 h2 {
   font-size: 1rem;
   margin: 0 0 2rem 0;
   font-weight: 600;
-  color: var(--color-blue1-);
+  color: var(--color-blue1);
 }
-
 
 .logo {
   display: flex;
@@ -169,7 +164,7 @@ h2 {
   bottom: 0;
   left: 0;
   z-index: -2;
-  background-color: black;
+  background-color: var(--color-text);
   transition: inherit;
 }
 
@@ -222,7 +217,7 @@ h2 {
  */
 .segmented-controls {
   border-radius: 0.5rem;
-  background: rgb(240, 240, 240);
+  background: var(--color-background-mute);
   height: 2rem;
   padding: 0.125rem;
 }
@@ -231,7 +226,7 @@ h2 {
  * Labels 
  */
 .segmented-controls label {
-  color: var(--color-blue1-);
+  color: var(--color-blue1);
   font-size: 0.8125rem;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 500;
@@ -249,7 +244,7 @@ h2 {
   left: 0;
   bottom: 0.5rem;
   width: 1px;
-  background: rgba(0, 0, 0, 0.15);
+  background: var(--color-text);
   transition: inherit;
 }
 
@@ -257,7 +252,7 @@ h2 {
  * Selected option 
  */
 .segmented-controls input:checked + label {
-  color: var(--color-blue5-);
+  color: var(--color-blue5);
   font-weight: 600;
   font-size: 0.875rem;
 }
@@ -281,7 +276,7 @@ h2 {
  * Paddle
  */
 .segmented-controls label:last-of-type::after {
-  background: var(--color-blue1-);
+  background: var(--color-blue1);
   border-radius: 0.4275rem;
   border: 0.5px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.04), 0px 3px 8px rgba(0, 0, 0, 0.12);
@@ -339,7 +334,7 @@ h2 {
 
 .busInfo-view {
   margin-left: 10px;
-  color: #ccc;
+  color: var(--color-heading);
 }
 
 

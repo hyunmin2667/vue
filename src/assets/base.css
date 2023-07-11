@@ -1,10 +1,10 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --color-blue1-:#03045e;
-  --color-blue2-:#0077b6;
-  --color-blue3-:#00b4d8;
-  --color-blue4-:#90e0ef;
-  --color-blue5-:#caf0f8;
+  --color-blue1:#03045e;
+  --color-blue2:#0077b6;
+  --color-blue3:#00b4d8;
+  --color-blue4:#90e0ef;
+  --color-blue5:#caf0f8;
 
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -14,36 +14,40 @@
   --vt-c-black-soft: #222222;
   --vt-c-black-mute: #282828;
 
-  --vt-c-indigo: #2c3e50;
-
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
   --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
   --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-1: var(--vt-c-black-soft);
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-1: var(--vt-c-white-soft);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
 }
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  --color-background: var(--vt-c-white);            /* 흰색1 */
+  --color-background-soft: var(--vt-c-white-soft);  /* 흰색2 */
+  --color-background-mute: var(--vt-c-white-mute);  /* 흰색3 */
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border: var(--vt-c-divider-light-2);      /* 더진한회색 */
+  --color-border-hover: var(--vt-c-divider-light-1);/* 진한회색 */
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--vt-c-text-light-1);        /* 검은색 */
+  --color-text: var(--vt-c-text-light-1);           /* 검은색 */
 
   --section-gap: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --color-blue5:#03045e;
+    --color-blue4:#0077b6;
+    --color-blue3:#00b4d8;
+    --color-blue2:#90e0ef;
+    --color-blue1:#e6fbff;
+
     --color-background: var(--vt-c-black);
     --color-background-soft: var(--vt-c-black-soft);
     --color-background-mute: var(--vt-c-black-mute);

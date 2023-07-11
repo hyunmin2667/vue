@@ -1,0 +1,5 @@
+@import "./base.css";
+
+path {
+  fill:var(--color-blue5);
+}
